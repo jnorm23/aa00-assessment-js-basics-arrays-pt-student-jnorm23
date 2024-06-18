@@ -10,6 +10,14 @@ npm test test/01-avg-value-spec.js
 // the average number value of all the numbers in the array.
 
 // Your code here 
+function avgValue(num){
+    if (num.length === 0) return 0;
+    let begin = 0
+    for (let i = 0; i < num.length; i++){
+        begin += num[i];
+    }
+    return begin / num.length;
 
+}
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = avgValue;
