@@ -36,5 +36,9 @@ function reverseWordChallenge(word) {
     
     return reversedWord;
 }
+// console.log(reverseWordChallenge("test")); // Should return "tset"
+// console.log(reverseWordChallenge("trial")); // Should return "lairt"
+// console.log(reverseWordChallenge("JavaScript")); // Should return "tpircSavaJ"
+
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = reverseWord;
