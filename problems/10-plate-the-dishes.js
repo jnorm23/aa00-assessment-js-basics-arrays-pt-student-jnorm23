@@ -21,7 +21,14 @@ npm test test/10-plate-the-dishes-spec.js
 // array.
 
 // Your code here 
-
+function plateTheDishes(arr1, arr2) {
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] === null && arr2.length > 0) {
+            arr1[i] = arr2.shift(); // Replace null with the first element from arr2
+        }
+    }
+    return arr1;
+}
 // console.log(plateTheDishes([null, 'burger', null], ['salad'])); //=> ['salad', 'burger', null]
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/

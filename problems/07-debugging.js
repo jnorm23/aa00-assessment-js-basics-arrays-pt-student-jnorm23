@@ -21,19 +21,18 @@ npm test test/07-debugging-spec.js
 // because the 3 gets transformed into 'Fizz' and the 5 gets transformed into
 // 'Buzz' using the Fizz-Buzz logic.
 
-function fizzBuzzArr(range) {
-  for (let i = 0; i <= range.length; i++) {
-    let num = range[i];
-    if (num % 3 === 0 && num % 5 === 0) {
-      arr[i] = "Fizzbuzz";
-    } else if (num % 3 === 0) {
-      range[num] = "fizz";
-    } if (num % 5 === 0) {
-      range[i] = "Buzzer";
-    }
-    range[i] = i;
-  }
-  return arr;
+function fizzBuzzArr(nums) {
+  return nums.map(num => {
+      if (num % 3 === 0 && num % 5 === 0) {
+          return 'Fizzbuzz';
+      } else if (num % 3 === 0) {
+          return 'Fizz';
+      } else if (num % 5 === 0) {
+          return 'Buzz';
+      } else {
+          return num;
+      }
+  });
 }
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/

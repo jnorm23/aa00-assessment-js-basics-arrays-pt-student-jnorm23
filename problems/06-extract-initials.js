@@ -13,6 +13,12 @@ npm test test/06-extract-initials-spec.js
 // string of 'JS'.
 
 // Your code here 
+function extractInitials(str) {
+    let words = str.split(' ');
 
+    let initials = words.map(word => word.charAt(0).toUpperCase());
+
+    return initials.join('');
+}
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = extractInitials;

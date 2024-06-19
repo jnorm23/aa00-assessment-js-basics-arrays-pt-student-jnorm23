@@ -13,12 +13,17 @@ NOTE: There are TWO problems to complete in this file.
 // the original input array and return the duplicated version of the array.
 
 // Your code here 
-
+function dupArr(arr) {
+  return arr.slice();
+}
 
 // Problem 2: Define a function called reverseDupArr that takes in an array.
 // Duplicate the elements of the original input array, but reverse them and
 // return the duplicated, reversed version of the array.
 // Your code here 
+function reverseDupArr(arr) {
+  return arr.slice().reverse();
+}
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 const exportObj = {};

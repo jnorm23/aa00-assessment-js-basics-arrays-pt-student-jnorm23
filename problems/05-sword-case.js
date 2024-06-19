@@ -11,6 +11,13 @@ npm test test/05-sword-case-spec.js
 // convention commonly used as your project file names (e.g., 05-sword-case.js).
 
 // Your code here 
+function swordCase(str) {
+    let lowerCasedStr = str.toLowerCase();                 // Convert the string to lowercase
+    
+    let swordCasedStr = lowerCasedStr.replace(/ /g, '-');  // Replace spaces with dashes
+    
+    return swordCasedStr;
+}
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = swordCase;
