@@ -17,7 +17,12 @@ npm test test/04-reverse-word-spec.js
 // researched from MDN above.
 
 // Your code here 
-
+function reverseWord(word) {
+    let charArray = word.split('');           // Use .split to split the word into an array of characters
+    charArray.reverse();                      // Use .reverse to reverse the array of characters
+    let reversedWord = charArray.join('');    // Use .join to join the reversed array back into a string
+    return reversedWord;
+}
 // OPTIONAL CHALLENGE: Define a function called reverseWordChallenge that takes
 // in a word string. Reverse the characters in the word and return it as a
 // string WITHOUT using the methods researched from MDN above.
