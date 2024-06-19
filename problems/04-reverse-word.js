@@ -27,6 +27,14 @@ function reverseWord(word) {
 // in a word string. Reverse the characters in the word and return it as a
 // string WITHOUT using the methods researched from MDN above.
 // Your code here 
-
+function reverseWordChallenge(word) {
+    let reversedWord = '';
+    
+    for (let i = word.length - 1; i >= 0; i--) {    // Loop through the string from the end
+        reversedWord += word[i];
+    }
+    
+    return reversedWord;
+}
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = reverseWord;
