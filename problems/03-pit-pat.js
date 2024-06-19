@@ -12,6 +12,16 @@ npm test test/03-pit-pat-spec.js
 // not by both.
 
 // Your code here 
+function pitPat(min, max) {
+    let result = [];
 
+    for (let i = min; i <= max; i++) {
+        if ((i % 4 === 0 || i % 6 === 0) && !(i % 4 === 0 && i % 6 === 0)) {
+            result.push(i);
+        }
+    }
+
+    return result;
+}
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = pitPat;
