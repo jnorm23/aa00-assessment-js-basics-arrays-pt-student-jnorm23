@@ -14,6 +14,13 @@ npm test test/02-exclusive-range-spec.js
 // should return an array of [3, 4].
 
 // Your code here 
+function exclusiveRange(min, max) {
+    let result = [];
+    for (let i = min + 1; i < max; i++) {
+        result.push(i);
+    }
 
+    return result;
+}
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = exclusiveRange;
